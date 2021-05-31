@@ -1,4 +1,4 @@
-mkdir ~/.fonts
+mkdir -p ~/.fonts
 cp fonts/* ~/.fonts
 sudo fc-cache -fv
 
