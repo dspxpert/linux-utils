@@ -2,6 +2,8 @@ mkdir -p ~/.fonts
 cp fonts/* ~/.fonts
 sudo fc-cache -fv
 
+cp pictures/* ~/Pictures
+
 sudo apt install -y curl
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
