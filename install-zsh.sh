@@ -1,3 +1,6 @@
+sudo usermod -aG docker $USER
+sudo usermod -aG dialout $USER
+
 mkdir -p ~/.fonts
 cp fonts/* ~/.fonts
 sudo fc-cache -fv
