@@ -3,8 +3,8 @@ sudo apt install -y htop net-tools iperf tmux byobu kdiff3 python3-pip putty neo
 
 sudo apt install ./ulauncher_5.14.3_all.deb
 
-chmod +x ./install_zsh.sh
-./install_zsh.sh
+chmod +x ./install-zsh.sh
+./install-zsh.sh
 
 pip3 install wpm
 pip3 install -U pyvisa
