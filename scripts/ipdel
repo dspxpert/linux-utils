@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo ip addr del 192.168.0.150/24 dev eth0
