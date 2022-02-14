@@ -28,6 +28,7 @@ chmod +x ./install_zsh.sh
 
 # Install Python packages
 pip3 install wpm
+pip3 install bpytop
 pip3 install -U pyvisa
 pip3 install pyvisa-py
 
