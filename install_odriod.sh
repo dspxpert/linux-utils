@@ -9,9 +9,11 @@ cp fonts/* ~/.fonts
 sudo fc-cache -fv
 
 # Setup Pictures
+mkdir -p ~/Pictures
 cp pictures/* ~/Pictures
 
 # Setup scripts to ~/.local/bin
+mkdir -p ~/.local/bin
 chmod +x ./scripts/*
 cp ./scripts/* ~/.local/bin
 
