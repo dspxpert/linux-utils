@@ -26,12 +26,13 @@ pip3 install -U pyvisa
 pip3 install pyvisa-py
 
 # Setup utils
-chmod +x ipadd
-chmod +x ipdel
-chmod +x wol
 cp ./ipadd ~/.local/bin
 cp ./ipdel ~/.local/bin
 cp ./wol   ~/.local/bin
+chmod +x ~/.local/bin/ipadd
+chmod +x ~/.local/bin/ipdel
+chmod +x ~/.local/bin/wol
+
 
 # Swap Change
 sudo dphys-swapfile swapoff
