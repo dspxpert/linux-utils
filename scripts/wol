@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ $# -lt 1 ]]
+then
+    echo "Going to wake up your PC"
+    echo "sudo etherwake -i eth0 BC:5F:F4:63:20:3E"
+    sudo etherwake -i eth0 BC:5F:F4:63:20:3E
+else
+    echo "sudo etherwake -i eth0 $1"
+    sudo etherwake -i eth0 $1
+fi
