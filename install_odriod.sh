@@ -19,6 +19,7 @@ cp ./scripts/* ~/.local/bin
 
 # Install recommanded apps
 sudo apt install -y htop net-tools iperf tmux byobu python3-pip python3-tk neofetch exfat-fuse zip unzip hdparm etherwake
+sudo apt install -y kdiff3 putty gedit
 #sudo apt install -y kdiff3 putty tilix ibus ibus-hangul fonts-nanum
 #wget https://github.com/Ulauncher/Ulauncher/releases/download/5.14.3/ulauncher_5.14.3_all.deb
 #sudo apt install -y ./ulauncher_5.14.3_all.deb
