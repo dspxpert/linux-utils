@@ -37,3 +37,16 @@ sudo dphys-swapfile swapoff
 sudo vi /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
+
+# Setup Mouse Natural Scrolling
+# cd /usr/share/X11/xorg.conf.d
+# sudo vi 40-libinput.conf
+# add Option "NaturalScrolling" "true" to Section "InputClass", Identifier "libinput pointer catchall"
+#
+#Section "InputClass"
+#        Identifier "libinput point catchall"
+#        MatchIsPointer "on"
+#        MatchDevicePath "/dev/input/event*"
+#        Driver "libinput"
+#        Option "NaturalScrolling" "true"
+
