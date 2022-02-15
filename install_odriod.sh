@@ -3,6 +3,9 @@ sudo apt update
 sudo usermod -aG docker $USER
 sudo usermod -aG dialout $USER
 
+# Setup Timezone
+sudo dpkg-configure tzdata
+
 # Setup fonts
 mkdir -p ~/.fonts
 cp fonts/* ~/.fonts
@@ -45,5 +48,6 @@ sudo fallocate -l 2G /swapfile
 chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
-sudo vi /etc/fstab
+echo Please add \"/swapfile swap swap default 0 0\" to the end of /etc/fstab
+#sudo vi /etc/fstab
 # /swapfile swap swap default 0 0
