@@ -34,8 +34,16 @@ pip3 install bpytop
 pip3 install -U pyvisa
 pip3 install pyvisa-py
 
-# Swap Change
+# Swap Change for Raspberry Pi
 #sudo dphys-swapfile swapoff
 #sudo vi /etc/dphys-swapfile
 #sudo dphys-swapfile setup
 #sudo dphys-swapfile swapon
+
+# Swap Change for Ubuntu
+sudo fallocate -l 2G /swapfile
+chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo vi /etc/fstab
+# /swapfile swap swap default 0 0
