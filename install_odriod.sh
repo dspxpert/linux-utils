@@ -4,7 +4,9 @@ sudo usermod -aG docker $USER
 sudo usermod -aG dialout $USER
 
 # Setup Timezone
+#sudo timedatectl set-timezone Asia/Seoul
 sudo dpkg-configure tzdata
+
 
 # Setup fonts
 mkdir -p ~/.fonts
