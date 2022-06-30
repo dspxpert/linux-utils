@@ -29,6 +29,10 @@ sudo apt install -y kdiff3 putty gedit nautilus eog
 #wget https://github.com/Ulauncher/Ulauncher/releases/download/5.14.3/ulauncher_5.14.3_all.deb
 #sudo apt install -y ./ulauncher_5.14.3_all.deb
 
+# Install batcat and link bat
+sudo apt install bat
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
 # Setup zsh & powerlevel10k
 chmod +x ./install_zsh.sh
 ./install_zsh.sh
